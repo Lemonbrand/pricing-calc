@@ -1,0 +1,30 @@
+{
+  "business": {
+    "name": "Your Name/Company",
+    "email": "you@example.com",
+    "phone": ""
+  },
+  "hourlyRate": 150,
+  "baseRates": {
+    "landingPage": 2500,
+    "fullWebsite": 8000,
+    "copywriting": 500,
+    "designConsultation": 300,
+    "contentStrategy": 800,
+    "seoSetup": 600,
+    "analyticsSetup": 400,
+    "brandGuidelines": 1500,
+    "socialMediaKit": 1000,
+    "maintenanceHours": 150
+  },
+  "complexityMultipliers": {
+    "simple": 1.0,
+    "medium": 1.5,
+    "complex": 2.0
+  },
+  "rushFeePercent": 25,
+  "revisionsIncluded": 2,
+  "extraRevisionRate": 100,
+  "bundleDiscountPercent": 10,
+  "taxPercent": 13
+}

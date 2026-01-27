@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+/* Import bold, distinctive fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200;400;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+/* Custom CSS Variables for our bold aesthetic */
+@theme {
+  --color-brand-red: #DC2626;
+  --color-brand-red-dark: #B91C1C;
+  --color-cream: #FFFBF5;
+  --color-ink: #1A1A1A;
+  --color-ink-light: #404040;
+  --color-border: #1A1A1A;
+
+  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --shadow-brutal: 4px 4px 0px #1A1A1A;
+  --shadow-brutal-sm: 2px 2px 0px #1A1A1A;
+  --shadow-brutal-lg: 6px 6px 0px #1A1A1A;
+  --shadow-brutal-red: 4px 4px 0px #DC2626;
+}
+
+/* Base body styles */
+body {
+  font-family: var(--font-display);
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle grid pattern for depth */
+.bg-pattern {
+  background-image:
+    linear-gradient(rgba(26, 26, 26, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26, 26, 26, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Focus states with brutal aesthetic */
+*:focus-visible {
+  outline: 2px solid var(--color-brand-red);
+  outline-offset: 2px;
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--color-brand-red);
+  color: white;
+}
+
+/* Custom range slider styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: var(--color-ink);
+  border: none;
+  cursor: pointer;
+  margin-top: -4px;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: var(--color-brand-red);
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  background: var(--color-brand-red-dark);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: var(--color-ink);
+  border: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background: var(--color-brand-red);
+}
+
+input[type="range"]::-moz-range-thumb:active {
+  background: var(--color-brand-red-dark);
+}
+
+/* Scroll bar styling for brutal aesthetic */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+  border-left: 2px solid var(--color-ink);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-ink);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-red);
+}
