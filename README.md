@@ -156,6 +156,7 @@ Build it once. Own it forever.
 
 ## Related Build Challenges
 
+- [**Outbound Engine**](https://github.com/lemonbrand/outbound-engine) — AI-powered podcast guest outreach with anti-AI aesthetic
 - **Proposal Generator** — Turn a conversation into a formal proposal
 - **Invoice Generator** — Create and track invoices
 - **Contract Builder** — Standard agreements with custom terms
